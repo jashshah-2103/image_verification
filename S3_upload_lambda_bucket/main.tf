@@ -13,9 +13,9 @@ provider "aws" {
 }
 resource "aws_s3_bucket" "img" {
 
-  bucket = "imgveri"
+  bucket              = "imgveri"
   object_lock_enabled = false
-  request_payer = "BucketOwner"
+  request_payer       = "BucketOwner"
 
   grant {
     id = var.CANONICAL_ID

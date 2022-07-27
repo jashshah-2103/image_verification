@@ -13,10 +13,10 @@ provider "aws" {
   region  = var.REGION
 }
 resource "aws_sns_topic" "car_" {
-  content_based_deduplication              = false
-  display_name                             = "Car Detected"
-  fifo_topic                               = false
-  name                                     = "car-detect"
+  content_based_deduplication = false
+  display_name                = "Car Detected"
+  fifo_topic                  = false
+  name                        = "car-detect"
 
 }
 
